@@ -1,22 +1,13 @@
 <html>
     <head>
-        <title>jw0112 blog</title>    <!-- <title> : 제목 -->
+        <title>jw0112 Blog</title>
     </head>
     <body>
         <div>
             <h1><a href="">jw0112 Blog</a></h1>
         </div>
-
-        <div>
-            <p>published : 21.07.2022, 18:56</p> <!-- <p> : 문단 태그 -->
-            <h2><a href="">My first post</a></h2>
-            <p>Django Practice</p>
-        </div>
-
-        <div>
-            <p>published : 21.07.2022, 18:58</p>
-            <h2><a href="">My second post</a></h2>
-            <p>One more !</p>
-        </div>
+        {% for post in posts %}
+            {{ posts }}
+        {% endfor %}
     </body>
 </html>
